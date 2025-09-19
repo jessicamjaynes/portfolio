@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gleam Queen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff1f2; /* pink-50 */
+            color: #1f2937; /* gray-800 */
+        }
+        .hero {
+            background-image: url('https://placehold.co/1200x800/fbcfe8/be185d?text=Gleam+Queen');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 0;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(168, 85, 247, 0.7);
+            z-index: -1;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .close-button {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #9ca3af;
+        }
+        .close-button:hover {
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero text-white py-24 md:py-32 flex items-center justify-center text-center rounded-b-3xl shadow-xl">
+        <div class="container mx-auto px-4 z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Royal Treatment for Your Home.</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+                Providing top-tier cleaning services for homes and businesses. Let us handle the mess, so you can enjoy your life.
+            </p>
+            <a href="mailto:gleaming.queen.clean@gmail.com" class="bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                Email for a Free Quote
+            </a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                
+                <!-- Service Card 1 -->
+                <div class="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="text-fuchsia-600 mb-4 inline-block">
+                        <svg class="w-16 h-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Residential Cleaning</h3>
+                    <p class="text-gray-600">
+                        Regular and deep cleaning for homes of all sizes. We leave every room spotless, from kitchens to bathrooms.
+                    </p>
+                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 p-2 px-4 bg-fuchsia-700 text-white text-sm rounded-full shadow-md whitespace-nowrap opacity-0 scale-95 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100 pointer-events-none">
+                        1/2 off first cleaning!
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="text-fuchsia-600 mb-4 inline-block">
+                        <svg class="w-16 h-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Commercial Cleaning</h3>
+                    <p class="text-gray-600">
+                        Professional cleaning services for offices, retail spaces, and other businesses. A clean workplace is a productive one.
+                    </p>
+                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 p-2 px-4 bg-fuchsia-700 text-white text-sm rounded-full shadow-md whitespace-nowrap opacity-0 scale-95 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100 pointer-events-none">
+                        1/2 off first cleaning!
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="text-fuchsia-600 mb-4 inline-block">
+                        <svg class="w-16 h-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Deep Cleaning</h3>
+                    <p class="text-gray-600">
+                        An intensive, detailed cleaning from top to bottom. Perfect for spring cleaning or before/after moving.
+                    </p>
+                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 p-2 px-4 bg-fuchsia-700 text-white text-sm rounded-full shadow-md whitespace-nowrap opacity-0 scale-95 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100 pointer-events-none">
+                        1/2 off first cleaning!
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-fuchsia-100 py-16 md:py-24 rounded-t-3xl shadow-inner">
+        <div class="container mx-auto px-4 flex flex-col items-center gap-12 text-center">
+            <div class="max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About Our Business</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Gleam Queen was founded with a simple mission: to provide high-quality, reliable cleaning services that make our clients' lives easier. We are a team of dedicated professionals who are passionate about creating clean and healthy environments. We use eco-friendly products and meticulous attention to detail to ensure every job is done to the highest standard. We are also **fully insured**, giving you peace of mind with every service.
+                </p>
+                <a href="mailto:gleaming.queen.clean@gmail.com" class="bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
+                    Contact Us Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section id="areas" class="py-16 md:py-24 bg-fuchsia-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Our Service Areas</h2>
+            <p class="text-lg text-gray-700 mb-4">We proudly serve the following locations:</p>
+            <ul class="list-disc list-inside text-left text-gray-800 space-y-2 mx-auto md:mx-0 max-w-sm">
+                <li>Cherokee County, SC</li>
+                <li>North of Spartanburg, SC</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Get Your Free Quote</h2>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-xl">
+                <form id="quoteForm">
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                        <input type="text" id="name" name="Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                        <input type="email" id="email" name="Email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                        <input type="tel" id="phone" name="Phone Number" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Message or Service Request</label>
+                        <textarea id="message" name="Message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-500" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="w-full bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                            Submit Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success/Copy Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="document.getElementById('successModal').style.display='none'">&times;</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-4 text-center">Thank You for Your Interest!</h3>
+            <p class="text-gray-600 mb-4 text-center">
+                We appreciate your interest in our cleaning services. As each cleaning service is unique, we kindly ask you to contact us locally at <strong>821-202-0528</strong> and request to speak with <strong>Jessica Jaynes</strong>. Please leave a voicemail if necessary.
+            </p>
+            <p class="text-gray-600 mb-6 text-center">
+                Everyone is entitled to a complimentary quote, which may or may not involve a visit to the cleaning site. Additionally, until January, all clients will receive a <strong>50% discount</strong> on their first cleaning; please mention the promo code '50% off' during your initial communication with Jessica Jaynes.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-fuchsia-900 text-white py-12 rounded-t-3xl shadow-inner">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row justify-center items-center mb-6">
+                <a href="#" class="text-fuchsia-200 hover:text-white transition duration-300 mx-4">Home</a>
+                <a href="#services" class="text-fuchsia-200 hover:text-white transition duration-300 mx-4">Services</a>
+                <a href="#about" class="text-fuchsia-200 hover:text-white transition duration-300 mx-4">About</a>
+                <a href="#contact" class="text-fuchsia-200 hover:text-white transition duration-300 mx-4">Contact</a>
+            </div>
+            <p class="text-fuchsia-300 text-sm">  2024 Gleam Queen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                document.getElementById('successModal').style.display = 'flex';
+                // Reset form fields after successful submission to clear the form
+                this.reset();
+            } else {
+                console.error('Please fill out all required fields.');
+            }
+        });
+    </script>
+</body>
+</html>

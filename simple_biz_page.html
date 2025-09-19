@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Name - One-Page Site</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using Google Fonts for a clean look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#contact" class="text-xl font-bold text-blue-900">Your Business</a>
+            <div class="space-x-4 text-sm font-medium">
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
+                <a href="#gallery" class="text-gray-600 hover:text-blue-600 transition-colors">Gallery</a>
+                <a href="#reviews" class="text-gray-600 hover:text-blue-600 transition-colors">Reviews</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                <a href="#quote" class="text-gray-600 hover:text-blue-600 transition-colors">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-blue-900 text-white text-center py-16 rounded-b-3xl shadow-xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">
+            Your Awesome Business
+        </h1>
+        <p class="text-xl md:text-2xl font-light opacity-80">
+            Your Catchy Slogan Here
+        </p>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container mx-auto px-4 mt-8 space-y-12">
+
+        <!-- Contact Information Section - Moved to the top -->
+        <section id="contact" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center text-lg">
+                <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
+                    <h3 class="font-semibold mb-2 text-blue-800">Phone</h3>
+                    <a href="tel:5551234567" class="text-blue-600 hover:underline">(555) 123-4567</a>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
+                    <h3 class="font-semibold mb-2 text-blue-800">Email</h3>
+                    <a href="mailto:info@yourbusiness.com" class="text-blue-600 hover:underline">info@yourbusiness.com</a>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
+                    <h3 class="font-semibold mb-2 text-blue-800">Facebook</h3>
+                    <a href="#" target="_blank" class="text-blue-600 hover:underline">facebook.com/yourbusiness</a>
+                </div>
+            </div>
+            <div class="mt-6 text-center text-gray-700">
+                <p><strong>Address:</strong> 123 Main Street, Anytown, USA 12345</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200 text-center">
+                    <h3 class="font-semibold text-xl text-blue-800 mb-2">Service One</h3>
+                    <p class="text-gray-700">Detailed description of service one. Explain what you do and what makes it special. Focus on benefits to the customer.</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200 text-center">
+                    <h3 class="font-semibold text-xl text-blue-800 mb-2">Service Two</h3>
+                    <p class="text-gray-700">Description of service two. Describe the process or what the customer will get. Keep it clear and concise.</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-200 text-center">
+                    <h3 class="font-semibold text-xl text-blue-800 mb-2">Service Three</h3>
+                    <p class="text-gray-700">Description of service three. Highlight the value and quality you provide. Use strong action verbs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img src="https://placehold.co/600x400/3498db/ffffff?text=Image+1" alt="Placeholder image 1" class="w-full h-auto rounded-lg shadow-md">
+                <img src="https://placehold.co/600x400/2ecc71/ffffff?text=Image+2" alt="Placeholder image 2" class="w-full h-auto rounded-lg shadow-md">
+                <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Image+3" alt="Placeholder image 3" class="w-full h-auto rounded-lg shadow-md">
+                <img src="https://placehold.co/600x400/f1c40f/ffffff?text=Image+4" alt="Placeholder image 4" class="w-full h-auto rounded-lg shadow-md">
+                <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Image+5" alt="Placeholder image 5" class="w-full h-auto rounded-lg shadow-md">
+                <img src="https://placehold.co/600x400/34495e/ffffff?text=Image+6" alt="Placeholder image 6" class="w-full h-auto rounded-lg shadow-md">
+            </div>
+        </section>
+
+        <!-- Testimonials Section has been renamed to Reviews -->
+        <section id="reviews" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Customer Reviews</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200 text-center italic text-gray-700">
+                    <p>"The best service I have ever received! The team was professional, prompt, and exceeded all my expectations. Highly recommend!"</p>
+                    <p class="mt-4 font-semibold not-italic">- Jane Doe, CEO</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200 text-center italic text-gray-700">
+                    <p>"A fantastic experience from start to finish. They truly care about their customers and the quality of their work is unmatched."</p>
+                    <p class="mt-4 font-semibold not-italic">- John Smith, Founder</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border-2 border-gray-200 text-center italic text-gray-700">
+                    <p>"I was blown away by their attention to detail. They took my vision and made it a reality. I will definitely be a repeat customer."</p>
+                    <p class="mt-4 font-semibold not-italic">- Emily White, Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section - Moved to before the quote form -->
+        <section id="about" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">About Us</h2>
+            <p class="text-lg text-center leading-relaxed max-w-2xl mx-auto">
+                Welcome to our business! We are dedicated to providing the best possible service and products to our community. With years of experience and a passion for what we do, we strive to exceed your expectations every time.
+            </p>
+        </section>
+
+        <!-- Get a Quote Section with Form -->
+        <section id="quote" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Get a Free Quote</h2>
+            <form id="quoteForm" class="max-w-xl mx-auto space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Tell us about your project</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
+                        Submit Quote Request
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Hours of Operation Section -->
+        <section id="hours" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Hours of Operation</h2>
+            <ul class="text-lg max-w-sm mx-auto space-y-3">
+                <li class="flex justify-between items-center pb-2 border-b border-gray-200">
+                    <span class="font-semibold">Monday:</span>
+                    <span>9:00 AM - 5:00 PM</span>
+                </li>
+                <li class="flex justify-between items-center pb-2 border-b border-gray-200">
+                    <span class="font-semibold">Tuesday:</span>
+                    <span>9:00 AM - 5:00 PM</span>
+                </li>
+                <li class="flex justify-between items-center pb-2 border-b border-gray-200">
+                    <span class="font-semibold">Wednesday:</span>
+                    <span>9:00 AM - 5:00 PM</span>
+                </li>
+                <li class="flex justify-between items-center pb-2 border-b border-gray-200">
+                    <span class="font-semibold">Thursday:</span>
+                    <span>9:00 AM - 5:00 PM</span>
+                </li>
+                <li class="flex justify-between items-center pb-2 border-b border-gray-200">
+                    <span class="font-semibold">Friday:</span>
+                    <span>9:00 AM - 5:00 PM</span>
+                </li>
+                <li class="flex justify-between items-center pb-2 border-b border-gray-200">
+                    <span class="font-semibold">Saturday:</span>
+                    <span>10:00 AM - 2:00 PM</span>
+                </li>
+                <li class="flex justify-between items-center">
+                    <span class="font-semibold">Sunday:</span>
+                    <span class="text-red-600 font-bold">Closed</span>
+                </li>
+            </ul>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="bg-blue-900 text-white p-10 rounded-2xl text-center shadow-xl">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Ready to Get Started?</h3>
+            <p class="text-lg md:text-xl mb-6">Contact us today to discuss your project and get a free quote!</p>
+            <a href="#quote" class="bg-white text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-colors">
+                Contact Us
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-8 rounded-t-3xl shadow-inner">
+        <p>&copy; 2024 Your Business Name. All Rights Reserved.</p>
+        <p class="mt-2 text-xs text-gray-400">Your User ID: <span id="userIdDisplay">Loading...</span></p>
+    </footer>
+
+    <!-- Firebase and Script -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, getDoc, addDoc, setDoc, updateDoc, deleteDoc, onSnapshot, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        import { setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+
+        // Set Firebase logging level to debug
+        setLogLevel('debug');
+
+        // Access global variables safely
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+
+        const quoteForm = document.getElementById('quoteForm');
+        const userIdDisplay = document.getElementById('userIdDisplay');
+
+        let userId = null;
+        let authReady = false;
+
+        // --- Authentication and Initialization Logic ---
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                userId = user.uid;
+                userIdDisplay.textContent = userId;
+                authReady = true;
+                console.log("User authenticated with UID:", userId);
+            } else {
+                userId = null;
+                userIdDisplay.textContent = 'Not authenticated';
+                authReady = true;
+            }
+        });
+
+        // Sign in with custom token if available, otherwise sign in anonymously
+        async function authenticate() {
+            try {
+                if (initialAuthToken) {
+                    await signInWithCustomToken(auth, initialAuthToken);
+                    console.log("Attempted sign-in with custom token.");
+                } else {
+                    console.log("No custom token found. Attempting anonymous sign-in.");
+                    await signInAnonymously(auth);
+                }
+            } catch (error) {
+                console.error("Authentication Error:", error);
+                userIdDisplay.textContent = 'Auth Error';
+            }
+        }
+        authenticate();
+
+        // --- Quote Submission Logic ---
+        quoteForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            if (!authReady || !userId) {
+                showMessage("Authentication is still loading. Please try again in a moment.");
+                return;
+            }
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            const newQuote = {
+                name,
+                email,
+                phone,
+                message,
+                timestamp: Date.now(),
+            };
+
+            try {
+                const collectionPath = `/artifacts/${appId}/users/${userId}/quote_requests`;
+                await addDoc(collection(db, collectionPath), newQuote);
+                showMessage("Your quote request has been sent! We will get back to you soon.");
+                quoteForm.reset();
+            } catch (error) {
+                console.error("Error submitting quote:", error);
+                showMessage("There was an error submitting your request. Please try again.");
+            }
+        });
+
+        // Custom modal message box for user feedback
+        function showMessage(message) {
+            // Create modal elements
+            const modal = document.createElement('div');
+            modal.classList.add('fixed', 'inset-0', 'bg-gray-900', 'bg-opacity-50', 'flex', 'items-center', 'justify-center', 'z-50');
+
+            const modalContent = document.createElement('div');
+            modalContent.classList.add('bg-white', 'p-8', 'rounded-xl', 'shadow-2xl', 'max-w-sm', 'text-center', 'space-y-4');
+
+            const messageText = document.createElement('p');
+        
+            messageText.classList.add('text-lg', 'text-gray-800');
+            messageText.textContent = message;
+
+            const closeButton = document.createElement('button');
+            closeButton.classList.add('bg-blue-600', 'hover:bg-blue-700', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded-full', 'shadow');
+            closeButton.textContent = 'OK';
+            closeButton.onclick = () => {
+                modal.remove();
+            };
+
+            // Append elements and add to body
+            modalContent.appendChild(messageText);
+            modalContent.appendChild(closeButton);
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+        }
+
+        // Start the application
+        authenticate();
+    </script>
+
+</body>
+</html>

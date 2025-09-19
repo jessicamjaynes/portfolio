@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson's Kennels</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-amber-500">Jackson's Kennels</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-amber-500 transition-colors duration-300 font-medium">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-amber-500 transition-colors duration-300 font-medium">Services</a>
+                <a href="#contact" class="text-gray-600 hover:text-amber-500 transition-colors duration-300 font-medium">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-amber-500 transition-colors duration-300">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#about" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 font-medium">About Us</a>
+            <a href="#services" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 font-medium">Services</a>
+            <a href="#contact" class="block py-3 px-6 text-gray-600 hover:bg-gray-100 font-medium">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-slate-800 text-white py-24 md:py-40 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">
+                    Premier Boarding and Pet Care
+                </h1>
+                <p class="text-lg md:text-2xl mb-12 font-light max-w-2xl mx-auto">
+                    Professional, reliable services for your pet's comfort and well-being.
+                </p>
+                <a href="#contact" class="bg-amber-500 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:bg-amber-600 transition-transform transform hover:scale-105">
+                    Book a Stay
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 md:py-32 bg-gray-50">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/22c55e/ffffff?text=Professional+Dog+Care" alt="A dog smiling at Jackson's Kennels" class="rounded-2xl shadow-2xl">
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-6">About Jackson's Kennels</h2>
+                    <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                        At Jackson's Kennels, we are committed to providing a top-tier experience for your pet. Our mission is to provide a safe, clean, and stimulating environment where your dog can play, relax, and socialize.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Our facilities are designed with your pet's comfort and safety in mind, featuring spacious indoor and outdoor play areas, climate-controlled sleeping quarters, and a dedicated team of passionate animal lovers who provide constant supervision and care.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-16">Our Services</h2>
+                <div class="max-w-3xl mx-auto text-left space-y-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-amber-500">
+                        <h3 class="text-2xl font-semibold mb-2 flex items-center"><i class="fas fa-paw text-amber-500 mr-4"></i>Boarding</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            The most fundamental service, offering temporary housing for a few hours or several weeks. Pets typically have their own individual area for sleeping and eating.
+                        </p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-amber-500">
+                        <h3 class="text-2xl font-semibold mb-2 flex items-center"><i class="fas fa-utensils text-amber-500 mr-4"></i>Feeding and Hydration</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            All animals are given regular meals and fresh water according to their owners' instructions.
+                        </p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-amber-500">
+                        <h3 class="text-2xl font-semibold mb-2 flex items-center"><i class="fas fa-running text-amber-500 mr-4"></i>Exercise and Playtime</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Kennels provide daily activity and socialization to ease stress and keep pets active and happy.
+                        </p>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-amber-500">
+                        <h3 class="text-2xl font-semibold mb-2 flex items-center"><i class="fas fa-heartbeat text-amber-500 mr-4"></i>Health and Hygiene</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            The business monitors pets for any signs of illness or injury, administers medication if needed, and maintains a clean and sanitized facility.
+                        </p>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-amber-500">
+                        <h3 class="text-2xl font-semibold mb-2 flex items-center"><i class="fas fa-shield-alt text-amber-500 mr-4"></i>Safety and Security</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Secure fences, gates, and well-maintained enclosures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-10">Contact Us</h2>
+                <div class="max-w-xl mx-auto bg-white p-12 rounded-2xl shadow-xl border-t-4 border-amber-500">
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Submit a request to learn more about our services.
+                    </p>
+                    <form id="contact-form">
+                        <div class="mb-5">
+                            <input type="text" placeholder="Your Name" class="w-full px-5 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div class="mb-5">
+                            <input type="email" placeholder="Your Email" class="w-full px-5 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div class="mb-6">
+                            <textarea rows="5" placeholder="Your Message" class="w-full px-5 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-amber-500 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:bg-amber-600 transition-colors duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-message" class="mt-4 text-center text-green-500 font-semibold hidden"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Jackson's Kennels. All rights reserved.</p>
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-amber-500"><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-amber-500"><i class="fab fa-twitter text-xl"></i></a>
+                <a href="#" class="text-gray-400 hover:text-amber-500"><i class="fab fa-instagram text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Form Submission -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const contactForm = document.getElementById('contact-form');
+            const formMessage = document.getElementById('form-message');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            const navLinks = mobileMenu.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Handle form submission
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault(); // Prevent the default form submission (page reload)
+
+                // Display a success message to the user
+                formMessage.textContent = "Thank you for your message! We will be in touch shortly.";
+                formMessage.classList.remove('hidden');
+
+                // Clear the form fields after a short delay
+                setTimeout(() => {
+                    contactForm.reset();
+                    formMessage.classList.add('hidden');
+                }, 3000);
+            });
+        });
+    </script>
+
+</body>
+</html>
